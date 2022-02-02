@@ -33,9 +33,7 @@ jobs:
       fail-fast: false
       matrix:
         config:
-          - image: "debian"
-            tag: "bookworm"
-          - image: "fedora"
+          - image: "fedora"   # TODO build debian and ubuntu
             tag: "34"
           - image: "fedora"
             tag: "latest"
