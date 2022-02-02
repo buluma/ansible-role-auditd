@@ -16,20 +16,12 @@ molecule:
   retry: 1
   parallel:
     matrix:
-      - image: "debian"
-        tag: "bullseye"
-      - image: "debian"
-        tag: "bookworm"
-      - image: "fedora"
+      - image: "fedora".  # TODO build debian and ubuntu
         tag: "34"
       - image: "fedora"
         tag: "latest"
       - image: "fedora"
         tag: "rawhide"
-      - image: "ubuntu"
-        tag: "latest"
-      - image: "ubuntu"
-        tag: "bionic"
 
 galaxy:
   script:
