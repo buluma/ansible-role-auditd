@@ -2,9 +2,9 @@
 
 Install and configure auditd on your system.
 
-|GitHub|GitLab|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![github](https://github.com/buluma/ansible-role-auditd/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-auditd/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-auditd/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-auditd)|[![quality](https://img.shields.io/ansible/quality/57876)](https://galaxy.ansible.com/buluma/auditd)|[![downloads](https://img.shields.io/ansible/role/d/57876)](https://galaxy.ansible.com/buluma/auditd)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-auditd.svg)](https://github.com/buluma/ansible-role-auditd/releases/)|
+|GitHub|GitLab|Quality|Downloads|Version|Issues|Pull Requests|
+|------|------|-------|---------|-------|------|-------------|
+|[![github](https://github.com/buluma/ansible-role-auditd/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-auditd/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-auditd/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-auditd)|[![quality](https://img.shields.io/ansible/quality/57876)](https://galaxy.ansible.com/buluma/auditd)|[![downloads](https://img.shields.io/ansible/role/d/57876)](https://galaxy.ansible.com/buluma/auditd)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-auditd.svg)](https://github.com/buluma/ansible-role-auditd/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-auditd.svg)](https://github.com/buluma/ansible-role-auditd/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr/buluma/ansible-role-auditd.svg)](https://github.com/buluma/ansible-role-auditd/pulls/)|
 
 ## [Example Playbook](#example-playbook)
 
