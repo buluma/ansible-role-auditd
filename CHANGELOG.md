@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.0.8](https://github.com/buluma/ansible-role-auditd/tree/v1.0.8) (2022-09-11)
+
+[Full Changelog](https://github.com/buluma/ansible-role-auditd/compare/v1.0.7...v1.0.8)
+
 ## [v1.0.7](https://github.com/buluma/ansible-role-auditd/tree/v1.0.7) (2022-03-29)
 
 [Full Changelog](https://github.com/buluma/ansible-role-auditd/compare/v1.0.6...v1.0.7)
