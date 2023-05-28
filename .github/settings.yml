@@ -5,4 +5,4 @@
 repository:
   description: Install and configure auditd on your system.
   homepage: https://buluma.github.io/
-  topics: auditd, ansible, molecule, tox, playbook, hacktoberfest
+  topics: auditd, ansible, molecule, tox, playbook
