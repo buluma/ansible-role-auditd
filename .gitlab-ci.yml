@@ -8,7 +8,7 @@ molecule:
   script:
     - molecule test
   rules:
-    - if: $CI_COMMIT_REF_NAME == "master"
+    - if: $CI_COMMIT_REF_NAME == "main"
   parallel:
     matrix:
       - image: "enterpriselinux"
