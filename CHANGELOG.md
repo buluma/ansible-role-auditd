@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.0.11](https://github.com/buluma/ansible-role-auditd/tree/v1.0.11) (2023-05-28)
+
+[Full Changelog](https://github.com/buluma/ansible-role-auditd/compare/v1.0.10...v1.0.11)
+
 ## [v1.0.10](https://github.com/buluma/ansible-role-auditd/tree/v1.0.10) (2023-05-05)
 
 [Full Changelog](https://github.com/buluma/ansible-role-auditd/compare/v1.0.9...v1.0.10)
@@ -31,7 +35,6 @@
 **Merged pull requests:**
 
 - Bump buluma/gitlab-mirror-ci-action from 1.0.6 to 1.06 [\#6](https://github.com/buluma/ansible-role-auditd/pull/6) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Bump actions/checkout from 1 to 2.4.0 [\#4](https://github.com/buluma/ansible-role-auditd/pull/4) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [1.0.4](https://github.com/buluma/ansible-role-auditd/tree/1.0.4) (2022-02-12)
 
@@ -53,6 +56,7 @@
 **Merged pull requests:**
 
 - Bump alstr/todo-to-issue-action from 2.3 to 4.6 [\#5](https://github.com/buluma/ansible-role-auditd/pull/5) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump actions/checkout from 1 to 2.4.0 [\#4](https://github.com/buluma/ansible-role-auditd/pull/4) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump buluma/galaxy-action from 1.0.1 to 1.1.0 [\#3](https://github.com/buluma/ansible-role-auditd/pull/3) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [1.0.1](https://github.com/buluma/ansible-role-auditd/tree/1.0.1) (2022-02-02)
