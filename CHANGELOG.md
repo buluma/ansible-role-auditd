@@ -1,5 +1,14 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-auditd/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-auditd/compare/v1.0.11...HEAD)
+
+**Closed issues:**
+
+- Update buluma/todo-to-issue-action@v1.0.1 @buluma [\#16](https://github.com/buluma/ansible-role-auditd/issues/16)
+- Update action [\#15](https://github.com/buluma/ansible-role-auditd/issues/15)
+
 ## [v1.0.11](https://github.com/buluma/ansible-role-auditd/tree/v1.0.11) (2023-05-28)
 
 [Full Changelog](https://github.com/buluma/ansible-role-auditd/compare/v1.0.10...v1.0.11)
