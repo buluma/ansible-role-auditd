@@ -44,13 +44,8 @@ jobs:
             tag: "8"
           - image: "debian-systemd"
             tag: "latest"
-<<<<<<< HEAD
           - image: "debian-systemd"
             tag: "bullseye"
-=======
-          - image: "fedora-systemd"
-            tag: "36"
->>>>>>> 0542eea2592d45d446c455cf75d7aa7fb1ade466
           - image: "fedora-systemd"
             tag: "37"
           - image: "fedora-systemd"
@@ -75,7 +70,7 @@ jobs:
       - name: parse apparmor for mysql
         run: sudo apparmor_parser -R /etc/apparmor.d/usr.sbin.mysqld
       - name: molecule
-        uses: buluma/molecule-action@v5.0.9
+        uses: buluma/molecule-action@v5.1.1
         with:
           image: ${{ matrix.config.image }}
           tag: ${{ matrix.config.tag }}
