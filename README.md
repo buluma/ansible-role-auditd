@@ -1,4 +1,4 @@
-# [auditd](#auditd)
+# [Ansible role auditd](#auditd)
 
 Install and configure auditd on your system.
 
