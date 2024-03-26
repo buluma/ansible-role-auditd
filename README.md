@@ -14,12 +14,12 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
 ---
 - name: Converge
   hosts: all
-  become: yes
-  gather_facts: yes
+  become: true
+  gather_facts: true
 
   roles:
     - role: buluma.auditd
-      auditd_local_events: "no"
+      auditd_local_events: "false"
       auditd_rules:
         - file: /var/log/audit/
           keyname: auditlog
@@ -78,8 +78,8 @@ The machine needs to be prepared. In CI this is done using [`molecule/default/pr
 ---
 - name: Prepare
   hosts: all
-  become: yes
-  gather_facts: no
+  become: true
+  gather_facts: false
 
   roles:
     - role: buluma.bootstrap
@@ -100,8 +100,8 @@ auditd_fail_mode: 1
 auditd_maximum_rate: 60
 auditd_enable_flag: 1
 
-auditd_local_events: "yes"
-auditd_write_logs: "yes"
+auditd_local_events: "true"
+auditd_write_logs: "true"
 auditd_log_file: /var/log/audit/audit.log
 auditd_log_group: root
 auditd_log_format: RAW
@@ -116,21 +116,21 @@ auditd_name_format: none
 auditd_max_log_file_action: rotate
 auditd_space_left: 75
 auditd_space_left_action: syslog
-auditd_verify_email: "yes"
+auditd_verify_email: "true"
 auditd_action_mail_acct: root
 auditd_admin_space_left: 50
 auditd_admin_space_left_action: suspend
 auditd_disk_full_action: suspend
 auditd_disk_error_action: suspend
-auditd_use_libwrap: "yes"
+auditd_use_libwrap: "true"
 auditd_tcp_listen_queue: 5
 auditd_tcp_max_per_addr: 1
 auditd_tcp_client_max_idle: 0
-auditd_enable_krb5: "no"
+auditd_enable_krb5: "false"
 auditd_krb5_principal: auditd
-auditd_distribute_network: "no"
+auditd_distribute_network: "false"
 
-auditd_manage_rules: yes
+auditd_manage_rules: true
 
 auditd_default_arch: b64
 ```
