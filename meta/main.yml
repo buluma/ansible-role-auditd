@@ -1,7 +1,6 @@
 ---
 galaxy_info:
-  author: Michael Buluma
-  namespace: buluma
+  author: buluma
   role_name: auditd
   description: Install and configure auditd on your system.
   license: Apache-2.0
@@ -12,6 +11,7 @@ galaxy_info:
     - name: EL
       versions:
         - "8"
+        - "9"
     - name: Debian
       versions:
         - all
@@ -27,5 +27,8 @@ galaxy_info:
 
   galaxy_tags:
     - auditd
+    - system
+    - monitoring
+    - security
 
 dependencies: []

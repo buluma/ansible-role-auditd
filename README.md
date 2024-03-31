@@ -19,7 +19,8 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
 
   roles:
     - role: buluma.auditd
-      auditd_local_events: "false"
+      auditd_start_service: false
+      auditd_local_events: "no"
       auditd_rules:
         - file: /var/log/audit/
           keyname: auditlog
@@ -95,13 +96,14 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 ---
 # defaults file for auditd
 
+# Below variables are docuemented in the man page for auditd.conf
+# https://linux.die.net/man/5/auditd.conf
 auditd_buffer_size: 32768
 auditd_fail_mode: 1
 auditd_maximum_rate: 60
 auditd_enable_flag: 1
-
-auditd_local_events: "true"
-auditd_write_logs: "true"
+auditd_local_events: "yes"
+auditd_write_logs: "yes"
 auditd_log_file: /var/log/audit/audit.log
 auditd_log_group: root
 auditd_log_format: RAW
@@ -114,25 +116,33 @@ auditd_disp_qos: lossy
 auditd_dispatcher: /sbin/audispd
 auditd_name_format: none
 auditd_max_log_file_action: rotate
-auditd_space_left: 75
+auditd_space_left: "75"  # This can be a number ('25') or a percentage. ('25%')
 auditd_space_left_action: syslog
-auditd_verify_email: "true"
+auditd_verify_email: "yes"
 auditd_action_mail_acct: root
 auditd_admin_space_left: 50
 auditd_admin_space_left_action: suspend
 auditd_disk_full_action: suspend
 auditd_disk_error_action: suspend
-auditd_use_libwrap: "true"
+auditd_use_libwrap: "yes"
 auditd_tcp_listen_queue: 5
 auditd_tcp_max_per_addr: 1
 auditd_tcp_client_max_idle: 0
-auditd_enable_krb5: "false"
+auditd_enable_krb5: "no"
 auditd_krb5_principal: auditd
-auditd_distribute_network: "false"
+auditd_distribute_network: "no"
 
+# You can opt to manage the rules with this role or not.
+# Setting auditd_manage_rules to false will not manage the rules.
 auditd_manage_rules: true
 
+# Some rules require a specific architecture to be set.
 auditd_default_arch: b64
+
+
+# You can opt to start the auditd service or not.
+# Mostly useful in CI, to avoid starting the service.
+auditd_start_service: true
 ```
 
 ## [Requirements](#requirements)
@@ -161,7 +171,7 @@ This role has been tested on these [container images](https://hub.docker.com/u/b
 
 |container|tags|
 |---------|----|
-|[EL](https://hub.docker.com/r/buluma/enterpriselinux)|8|
+|[EL](https://hub.docker.com/r/buluma/enterpriselinux)|8, 9|
 |[Debian](https://hub.docker.com/r/buluma/debian)|all|
 |[Fedora](https://hub.docker.com/r/buluma/fedora)|all|
 |[opensuse](https://hub.docker.com/r/buluma/opensuse)|all|

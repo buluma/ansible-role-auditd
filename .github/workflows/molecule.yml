@@ -48,6 +48,8 @@ jobs:
         config:
           - image: "enterpriselinux"
             tag: "8"
+          - image: "enterpriselinux"
+            tag: "latest"
           - image: "docker-molecule-images"
             tag: "buster"
           - image: "docker-molecule-images"
