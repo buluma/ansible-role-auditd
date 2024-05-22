@@ -134,7 +134,10 @@
   ansible.builtin.assert:
     that:
       - auditd_space_left is defined
+      - auditd_space_left is number or  auditd_space_left is string
+      - auditd_space_left is match("([0-9])+%*")
     quiet: true
+
 
 - name: assert | Test auditd_space_left_action
   ansible.builtin.assert:
@@ -166,7 +169,7 @@
       - auditd_admin_space_left is defined
       - auditd_admin_space_left is number
       - auditd_admin_space_left >= 0
-      - auditd_admin_space_left <= 100
+      - auditd_admin_space_left <= auditd_space_left
     quiet: true
 
 - name: assert | Test auditd_admin_space_left_action
