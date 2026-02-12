@@ -7,6 +7,8 @@
 **Closed issues:**
 
 - Update buluma/todo-to-issue-action@v1.0.1 @buluma [\#22](https://github.com/buluma/ansible-role-auditd/issues/22)
+- Update action [\#21](https://github.com/buluma/ansible-role-auditd/issues/21)
+- rebuild action [\#20](https://github.com/buluma/ansible-role-auditd/issues/20)
 - Update buluma/todo-to-issue-action@v1.0.1 @buluma [\#16](https://github.com/buluma/ansible-role-auditd/issues/16)
 - Update action [\#15](https://github.com/buluma/ansible-role-auditd/issues/15)
 
