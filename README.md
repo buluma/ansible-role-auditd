@@ -1,10 +1,10 @@
-# Ansible role [auditd](https://galaxy.ansible.com/ui/standalone/roles/buluma/auditd/documentation)
+# [Ansible role auditd](#ansible-role-auditd)
 
 Install and configure auditd on your system.
 
-|GitHub|Version|Issues|Pull Requests|Downloads|
-|------|-------|------|-------------|---------|
-|[![github](https://github.com/buluma/ansible-role-auditd/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-auditd/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-auditd.svg)](https://github.com/buluma/ansible-role-auditd/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-auditd.svg)](https://github.com/buluma/ansible-role-auditd/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-auditd.svg)](https://github.com/buluma/ansible-role-auditd/pulls/)|[![Ansible Role](https://img.shields.io/ansible/role/d/buluma/auditd)](https://galaxy.ansible.com/ui/standalone/roles/buluma/auditd/documentation)|
+|GitHub|GitLab|Downloads|Version|
+|------|------|---------|-------|
+|[![github](https://github.com/buluma/ansible-role-auditd/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-auditd/actions)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-auditd/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-auditd)|[![downloads](https://img.shields.io/ansible/role/d/buluma/auditd)](https://galaxy.ansible.com/buluma/auditd)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-auditd.svg)](https://github.com/buluma/ansible-role-auditd/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -18,7 +18,7 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
   gather_facts: true
 
   roles:
-    - role: buluma.auditd
+    - role: ansible-role-auditd
       auditd_start_service: false
       auditd_local_events: "no"
       auditd_rules:
@@ -153,16 +153,15 @@ auditd_start_service: true
 
 The following roles are used to prepare a system. You can prepare your system in another way.
 
-| Requirement | GitHub | Version |
+| Requirement | GitHub | GitLab |
 |-------------|--------|--------|
-|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Ansible Molecule](https://github.com/buluma/ansible-role-bootstrap/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-bootstrap.svg)](https://github.com/shadowwalker/ansible-role-bootstrap)|
+|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Build Status GitHub](https://github.com/buluma/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/ansible-role-bootstrap/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-bootstrap)|
 
 ## [Context](#context)
 
-This role is a part of many compatible roles. Have a look at [the documentation of these roles](https://buluma.github.io/) for further information.
+This role is part of many compatible roles. Have a look at [the documentation of these roles](https://buluma.github.io/) for further information.
 
 Here is an overview of related roles:
-
 ![dependencies](https://raw.githubusercontent.com/buluma/ansible-role-auditd/png/requirements.png "Dependencies")
 
 ## [Compatibility](#compatibility)
@@ -177,22 +176,19 @@ This role has been tested on these [container images](https://hub.docker.com/u/b
 |[opensuse](https://hub.docker.com/r/buluma/opensuse)|all|
 |[Ubuntu](https://hub.docker.com/r/buluma/ubuntu)|all|
 
-The minimum version of Ansible required is 2.12, tests have been done to:
+The minimum version of Ansible required is 2.12, tests have been done on:
 
 - The previous version.
 - The current version.
 - The development version.
 
-If you find issues, please register them in [GitHub](https://github.com/buluma/ansible-role-auditd/issues)
-
-## [Changelog](#changelog)
-
-[Role History](https://github.com/buluma/ansible-role-auditd/blob/master/CHANGELOG.md)
+If you find issues, please register them on [GitHub](https://github.com/buluma/ansible-role-auditd/issues).
 
 ## [License](#license)
 
-[Apache-2.0](https://github.com/buluma/ansible-role-auditd/blob/master/LICENSE)
+[Apache-2.0](https://github.com/buluma/ansible-role-auditd/blob/master/LICENSE).
 
 ## [Author Information](#author-information)
 
-[Shadow Walker](https://buluma.github.io/)
+[buluma](https://buluma.github.io/)
+
