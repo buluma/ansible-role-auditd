@@ -28,7 +28,7 @@ jobs:
     steps:
       - uses: "actions/checkout@v6"
       - name: "TODO to Issue"
-        uses: "buluma/todo-to-issue-action@v2.0.2"
+        uses: "alstr/todo-to-issue-action@v4.10" # TODO: Update buluma/todo-to-issue-action@v1.0.1 @buluma
         id: "todo"
         with:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
