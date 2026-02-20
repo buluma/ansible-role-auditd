@@ -1,5 +1,4 @@
 ---
-
 - name: assert | Test auditd_buffer_size
   ansible.builtin.assert:
     that:
