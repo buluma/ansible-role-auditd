@@ -12,6 +12,11 @@
 - Update buluma/todo-to-issue-action@v1.0.1 @buluma [\#16](https://github.com/buluma/ansible-role-auditd/issues/16)
 - Update action [\#15](https://github.com/buluma/ansible-role-auditd/issues/15)
 
+**Merged pull requests:**
+
+- Bump buluma/dependabot-auto-merge-action from 2.1.2 to 2.1.4 [\#26](https://github.com/buluma/ansible-role-auditd/pull/26) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Fix the assertions for space left in auditd config [\#25](https://github.com/buluma/ansible-role-auditd/pull/25) ([nono-lqdn](https://github.com/nono-lqdn))
+
 ## [v1.0.11](https://github.com/buluma/ansible-role-auditd/tree/v1.0.11) (2023-05-28)
 
 [Full Changelog](https://github.com/buluma/ansible-role-auditd/compare/v1.0.10...v1.0.11)
