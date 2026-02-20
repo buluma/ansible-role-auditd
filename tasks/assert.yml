@@ -137,7 +137,6 @@
       - auditd_space_left is match("([0-9])+%*")
     quiet: true
 
-
 - name: assert | Test auditd_space_left_action
   ansible.builtin.assert:
     that:
