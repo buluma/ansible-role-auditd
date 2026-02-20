@@ -4,22 +4,30 @@
 #
 
 on:
-  - push
+  push:
+    branches:
+      - master
+      - main
+    paths:
+      - '.github/workflows/requirements2png.yml'
+  release:
+    types:
+      - published
 
 name: Ansible Graphviz
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with:
           path: ${{ github.repository }}
       - name: create png
-        uses: buluma/graphviz-action@1.0.0 # TODO: Update action
+        uses: buluma/graphviz-action@1.0.0
       - name: Commit files
         run: |
           cd ${{ github.repository }}
