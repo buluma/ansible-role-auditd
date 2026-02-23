@@ -12,78 +12,78 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
 
 ```yaml
 ---
-  - name: Converge
-    hosts: all
-    become: true
-    gather_facts: true
+- name: Converge
+  hosts: all
+  become: true
+  gather_facts: true
 
-    roles:
-      - role: buluma.auditd
-        auditd_start_service: false
-        auditd_local_events: "no"
-        auditd_rules:
-          - file: /var/log/audit/
-            keyname: auditlog
-          - file: /etc/audit/
-            permissions:
-              - write
-              - attribute_change
-            keyname: auditconfig
-          - file: /etc/libaudit.conf
-            permissions:
-              - write
-              - attribute_change
-            keyname: auditconfig
-          - file: /etc/audisp/
-            permissions:
-              - write
-              - attribute_change
-            keyname: audispconfig
-          - file: /sbin/auditctl
-            permissions:
-              - execute
-            keyname: audittools
-          - file: /sbin/auditd
-            permissions:
-              - execute
-            keyname: audittools
-          - syscall: open
-            action: always
-            filter: exit
-            filters:
-              - auid!=4294967295
-              - auid!=unset
-            keyname: my_keyname
-            arch: b32
-          - syscall: adjtimex
-            action: always
-            filter: exit
-            keyname: time_change
-          - syscall: settimeofday
-            action: always
-            filter: exit
-            keyname: time_change
-          - action: always
-            filter: exit
-            filters:
-              - path=/bin/ping
-              - perm=x
-              - auid>=500
-              - auid!=4294967295
-            keyname: privileged
+  roles:
+  - role: buluma.auditd
+    auditd_start_service: false
+    auditd_local_events: "no"
+    auditd_rules:
+    - file: /var/log/audit/
+      keyname: auditlog
+    - file: /etc/audit/
+      permissions:
+      - write
+      - attribute_change
+      keyname: auditconfig
+    - file: /etc/libaudit.conf
+      permissions:
+      - write
+      - attribute_change
+      keyname: auditconfig
+    - file: /etc/audisp/
+      permissions:
+      - write
+      - attribute_change
+      keyname: audispconfig
+    - file: /sbin/auditctl
+      permissions:
+      - execute
+      keyname: audittools
+    - file: /sbin/auditd
+      permissions:
+      - execute
+      keyname: audittools
+    - syscall: open
+      action: always
+      filter: exit
+      filters:
+      - auid!=4294967295
+      - auid!=unset
+      keyname: my_keyname
+      arch: b32
+    - syscall: adjtimex
+      action: always
+      filter: exit
+      keyname: time_change
+    - syscall: settimeofday
+      action: always
+      filter: exit
+      keyname: time_change
+    - action: always
+      filter: exit
+      filters:
+      - path=/bin/ping
+      - perm=x
+      - auid>=500
+      - auid!=4294967295
+      keyname: privileged
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/buluma/ansible-role-auditd/blob/master/molecule/default/prepare.yml):
 
 ```yaml
 ---
-  - name: Prepare
-    hosts: all
-    become: true
-    gather_facts: false
+- name: Prepare
+  hosts: all
+  become: true
+  gather_facts: false
 
-    roles:
-      - role: buluma.bootstrap
+  roles:
+  - role: buluma.bootstrap
 ```
 
 Also see a [full explanation and example](https://buluma.github.io/how-to-use-these-roles.html) on how to use these roles.
