@@ -14,8 +14,12 @@
 
 **Merged pull requests:**
 
+- Bump actions/checkout from 4 to 6 [\#27](https://github.com/buluma/ansible-role-auditd/pull/27) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump buluma/dependabot-auto-merge-action from 2.1.2 to 2.1.4 [\#26](https://github.com/buluma/ansible-role-auditd/pull/26) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Fix the assertions for space left in auditd config [\#25](https://github.com/buluma/ansible-role-auditd/pull/25) ([nono-lqdn](https://github.com/nono-lqdn))
+- Bump buluma/molecule-action from 5.0.7 to 5.0.8 [\#19](https://github.com/buluma/ansible-role-auditd/pull/19) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump alstr/todo-to-issue-action from 2.3 to 4.10 [\#18](https://github.com/buluma/ansible-role-auditd/pull/18) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump buluma/gh-action-auto-merge-dependabot-updates from 1.0.5 to 1.0.7 [\#17](https://github.com/buluma/ansible-role-auditd/pull/17) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [v1.0.11](https://github.com/buluma/ansible-role-auditd/tree/v1.0.11) (2023-05-28)
 
