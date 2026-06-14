@@ -134,7 +134,7 @@
     that:
       - auditd_space_left is defined
       - auditd_space_left is number or auditd_space_left is string
-      - auditd_space_left is match("([0-9])+%*")
+      - auditd_space_left | string is match("^[0-9]+%?$")
     quiet: true
 
 - name: assert | Test auditd_space_left_action
@@ -167,6 +167,7 @@
       - auditd_admin_space_left is defined
       - auditd_admin_space_left is number
       - auditd_admin_space_left >= 0
+      - (auditd_admin_space_left | int < auditd_space_left | int) if (auditd_space_left | string is not match(".*%")) else true
     quiet: true
 
 - name: assert | Test auditd_admin_space_left_action
