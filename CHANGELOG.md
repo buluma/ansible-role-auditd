@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/buluma/ansible-role-auditd/tree/HEAD)
+## [v26.6.0](https://github.com/buluma/ansible-role-auditd/tree/v26.6.0) (2026-06-14)
 
-[Full Changelog](https://github.com/buluma/ansible-role-auditd/compare/v1.0.11...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-auditd/compare/v1.0.11...v26.6.0)
 
 **Closed issues:**
 
