@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-auditd/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-auditd/compare/v26.6.0...HEAD)
+
+**Closed issues:**
+
+- Assertion for auditd\_space\_left contradicts what's written in the README [\#24](https://github.com/buluma/ansible-role-auditd/issues/24)
+
 ## [v26.6.0](https://github.com/buluma/ansible-role-auditd/tree/v26.6.0) (2026-06-14)
 
 [Full Changelog](https://github.com/buluma/ansible-role-auditd/compare/v1.0.11...v26.6.0)
